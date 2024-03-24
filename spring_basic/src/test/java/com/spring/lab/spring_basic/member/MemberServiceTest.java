@@ -1,29 +1,30 @@
 package com.spring.lab.spring_basic.member;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 public class MemberServiceTest {
-    MemberService memberService;
 
-    @BeforeEach
-    void beforeEach() {
-        memberService = new MemberServiceImpl(new MemoryMemberRepository());
-    }
+  MemberService memberService;
 
-    @Test
-    void join() {
-        // given
-        Long memberId = 1L;
-        Member member = new Member(memberId, "memberA", Grade.VIP);
+  @BeforeEach
+  void beforeEach() {
+    memberService = new MemberServiceImpl(new MemoryMemberRepository());
+  }
 
-        // when
-        memberService.join(member);
-        Member findMember = memberService.findMember(memberId);
+  @Test
+  void join() {
+    // given
+    Long memberId = 1L;
+    Member member = new Member(memberId, "memberA", Grade.VIP);
 
-        // then
-        assertThat(member).isEqualTo(findMember);
-    }
+    // when
+    memberService.join(member);
+    Member findMember = memberService.findMember(memberId);
+
+    // then
+    assertThat(member).isEqualTo(findMember);
+  }
 }
