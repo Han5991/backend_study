@@ -3,9 +3,12 @@ package com.spring.lab.spring_basic.order;
 import com.spring.lab.spring_basic.discount.DiscountPolicy;
 import com.spring.lab.spring_basic.member.Member;
 import com.spring.lab.spring_basic.member.MemberRepository;
+import lombok.Getter;
 
 public class OrderServiceImpl implements OrderService {
 
+  // Test용
+  @Getter
   private final MemberRepository memberRepository;
   private final DiscountPolicy discountPolicy;
 
