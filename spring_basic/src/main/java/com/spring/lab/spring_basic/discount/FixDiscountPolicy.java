@@ -3,10 +3,11 @@ package com.spring.lab.spring_basic.discount;
 import com.spring.lab.spring_basic.member.Grade;
 import com.spring.lab.spring_basic.member.Member;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("fixDiscountPolicy")
+@Primary
 public class FixDiscountPolicy implements DiscountPolicy {
 
   private final int discountFixAmount = 1000; // 1000원 할인
