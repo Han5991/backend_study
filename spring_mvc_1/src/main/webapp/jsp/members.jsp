@@ -1,7 +1,7 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="hello.servlet.domain.member.Member" %>
+<%@ page import="com.spring.lab.spring_mvc_1.domain.mamber.MemberRepository" %>
+<%@ page import="com.spring.lab.spring_mvc_1.domain.mamber.Member" %>
 <%@ page import="java.util.List" %>
-<%@ page import="hello.servlet.domain.member.MemberRepository" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     MemberRepository memberRepository = MemberRepository.getInstance();
     List<Member> members = memberRepository.findAll();

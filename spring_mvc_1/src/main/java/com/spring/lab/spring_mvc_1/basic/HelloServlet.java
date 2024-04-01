@@ -1,5 +1,6 @@
 package com.spring.lab.spring_mvc_1.basic;
 
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -11,13 +12,19 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
 
   @Override
-  protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    System.out.println("req = " + req);
-    System.out.println("resp = " + resp);
-    String username = req.getParameter("username");
+  protected void service(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
+
+    System.out.println("HelloServlet.service");
+    System.out.println("request = " + request);
+    System.out.println("response = " + response);
+
+    String username = request.getParameter("username");
     System.out.println("username = " + username);
-    resp.setContentType("text/plain");
-    resp.setCharacterEncoding("utf-8");
-    resp.getWriter().write("hello " + username);
+
+    response.setContentType("text/plain");
+    response.setCharacterEncoding("utf-8");
+    response.getWriter().write("hello " + username);
+
   }
 }
