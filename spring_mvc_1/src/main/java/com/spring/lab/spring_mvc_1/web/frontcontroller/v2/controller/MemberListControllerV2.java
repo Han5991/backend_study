@@ -1,4 +1,4 @@
-package com.spring.lab.spring_mvc_1.web.frontcontroller.v2.contoller;
+package com.spring.lab.spring_mvc_1.web.frontcontroller.v2.controller;
 
 import com.spring.lab.spring_mvc_1.domain.mamber.Member;
 import com.spring.lab.spring_mvc_1.domain.mamber.MemberRepository;

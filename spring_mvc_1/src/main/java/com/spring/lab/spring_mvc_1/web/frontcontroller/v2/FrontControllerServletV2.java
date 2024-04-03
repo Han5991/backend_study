@@ -1,9 +1,9 @@
 package com.spring.lab.spring_mvc_1.web.frontcontroller.v2;
 
 import com.spring.lab.spring_mvc_1.web.frontcontroller.MyView;
-import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.contoller.MemberFormControllerV2;
-import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.contoller.MemberListControllerV2;
-import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.contoller.MemberSaveControllerV2;
+import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.controller.MemberFormControllerV2;
+import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.controller.MemberListControllerV2;
+import com.spring.lab.spring_mvc_1.web.frontcontroller.v2.controller.MemberSaveControllerV2;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
