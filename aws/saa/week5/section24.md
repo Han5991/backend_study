@@ -1,0 +1,9 @@
+- monitoring
+  - cloudwatch
+    - aws 모든게 나옴
+    - 서비스당 네임스페이스 하나
+    - 메트릭스를 스트리밍 한다
+    - 파이어홀 -> s3 -> athena or redshift or openSearch
+  - cloudWatch logs
+    - 정책에 따라 로그를 수집함
+    - 람다와 오픈서치에 전송 가능
