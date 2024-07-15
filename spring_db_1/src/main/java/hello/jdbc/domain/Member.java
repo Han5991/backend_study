@@ -13,4 +13,6 @@ public class Member {
     this.money = money;
   }
 
+  public Member() {
+  }
 }
